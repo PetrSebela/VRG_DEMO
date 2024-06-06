@@ -11,7 +11,7 @@
 #include "main.hpp"
 
 #define SIM_STEP_LIMIT 10000
-#define ALLOWED_TARGET_DEVIAION_RATIO 0.75
+#define ALLOWED_TARGET_DEVIATION_RATIO 0.75
 
 sim_settings settings;
 sim_data data;
@@ -35,7 +35,7 @@ void UpdateScene(entt::registry &registry, int iteration)
                 continue;
 
             Transform t = view.get<Transform>(tested_entity);
-            float allowed_diviation = iteration * settings.time_step * ALLOWED_TARGET_DEVIAION_RATIO; // compensation for simulation error, should accound for bullet velocity as well
+            float allowed_diviation = iteration * settings.time_step * ALLOWED_TARGET_DEVIATION_RATIO; // compensation for simulation error, should accound for bullet velocity as well
             if (transform.InHitRange(t.GetPosition(), allowed_diviation))
             {
                 printf("hit!\n");
