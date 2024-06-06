@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/balistics.cpp.o"
   "CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/balistics.cpp.o.d"
+  "CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/simulation.cpp.o"
+  "CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/simulation.cpp.o.d"
   "CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/transform.cpp.o"
   "CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/transform.cpp.o.d"
   "CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/vector3.cpp.o"

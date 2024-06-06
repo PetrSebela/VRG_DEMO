@@ -153,6 +153,30 @@ home/petr/Projects/VRG_DEMO/src/balistics.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/balistics.cpp.s
 .PHONY : home/petr/Projects/VRG_DEMO/src/balistics.cpp.s
 
+home/petr/Projects/VRG_DEMO/src/simulation.o: home/petr/Projects/VRG_DEMO/src/simulation.cpp.o
+.PHONY : home/petr/Projects/VRG_DEMO/src/simulation.o
+
+# target to build an object file
+home/petr/Projects/VRG_DEMO/src/simulation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/simulation.cpp.o
+.PHONY : home/petr/Projects/VRG_DEMO/src/simulation.cpp.o
+
+home/petr/Projects/VRG_DEMO/src/simulation.i: home/petr/Projects/VRG_DEMO/src/simulation.cpp.i
+.PHONY : home/petr/Projects/VRG_DEMO/src/simulation.i
+
+# target to preprocess a source file
+home/petr/Projects/VRG_DEMO/src/simulation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/simulation.cpp.i
+.PHONY : home/petr/Projects/VRG_DEMO/src/simulation.cpp.i
+
+home/petr/Projects/VRG_DEMO/src/simulation.s: home/petr/Projects/VRG_DEMO/src/simulation.cpp.s
+.PHONY : home/petr/Projects/VRG_DEMO/src/simulation.s
+
+# target to generate assembly for a file
+home/petr/Projects/VRG_DEMO/src/simulation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/home/petr/Projects/VRG_DEMO/src/simulation.cpp.s
+.PHONY : home/petr/Projects/VRG_DEMO/src/simulation.cpp.s
+
 home/petr/Projects/VRG_DEMO/src/transform.o: home/petr/Projects/VRG_DEMO/src/transform.cpp.o
 .PHONY : home/petr/Projects/VRG_DEMO/src/transform.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... home/petr/Projects/VRG_DEMO/src/balistics.o"
 	@echo "... home/petr/Projects/VRG_DEMO/src/balistics.i"
 	@echo "... home/petr/Projects/VRG_DEMO/src/balistics.s"
+	@echo "... home/petr/Projects/VRG_DEMO/src/simulation.o"
+	@echo "... home/petr/Projects/VRG_DEMO/src/simulation.i"
+	@echo "... home/petr/Projects/VRG_DEMO/src/simulation.s"
 	@echo "... home/petr/Projects/VRG_DEMO/src/transform.o"
 	@echo "... home/petr/Projects/VRG_DEMO/src/transform.i"
 	@echo "... home/petr/Projects/VRG_DEMO/src/transform.s"

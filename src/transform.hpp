@@ -14,6 +14,7 @@ private:
     Vector3 position;
     Vector3 velocity;
     bool isStatic = false;
+    float distance_traveled = 0;
     std::string name;
 
 public:
@@ -36,7 +37,9 @@ public:
 
     // returs string representation of transform
     std::string ToString();
-    
+
+    Vector3 GetVelocity();
+    float GetTravelDistance();
     Vector3 GetPosition();
     std::string GetName();
 };

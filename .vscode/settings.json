@@ -84,6 +84,7 @@
         "__tuple": "cpp",
         "__verbose_abort": "cpp",
         "ios": "cpp",
-        "locale": "cpp"
+        "locale": "cpp",
+        "complex": "cpp"
     }
 }

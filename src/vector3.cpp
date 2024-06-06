@@ -24,7 +24,7 @@ Vector3 Vector3::PitchYawToVector(double pitch, double yaw)
 
 std::string Vector3::ToString()
 {
-    return std::format("(\t{},\t{},\t{})", this->x, this->y, this->z);
+    return std::format("( {:.3f}, {:.3f}, {:.3f} )", this->x, this->y, this->z);
 }
 
 float Vector3::GetMagnitude()
@@ -81,4 +81,9 @@ void Vector3::operator/=(const float &other)
 Vector3 Vector3::operator/(const float &other)
 {
     return Vector3(this->x / other, this->y / other, this->z / other);
+}
+
+bool Vector3::IsValid()
+{
+    return !(std::isnan(x) || std::isnan(y) || std::isnan(z));
 }

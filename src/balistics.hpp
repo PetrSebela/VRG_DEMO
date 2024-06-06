@@ -7,6 +7,7 @@
  * Returns elevation angle in degrees needed to hit target at coordinates (x, y) with specified initial velocity
  * Shooter is in (0, 0) and target should be in from of him [x in range (0, inf) ] 
  * @warning If initial velocity isnt enough to reach the target, NaN is returned
+ * @warning Works fine for "realistic" speeds (0 - 1,000,000) outside this range NaN is returned because the result is way too much imprecise
  * @param initial_velocity initial projectile velocity
  * @param x distance from target
  * @param y target height

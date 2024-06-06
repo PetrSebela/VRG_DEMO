@@ -97,10 +97,24 @@ CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/petr/Projects/VRG_DEMO/src/main.cpp -o CMakeFiles/main.dir/src/main.cpp.s
 
+CMakeFiles/main.dir/src/simulation.cpp.o: CMakeFiles/main.dir/flags.make
+CMakeFiles/main.dir/src/simulation.cpp.o: /home/petr/Projects/VRG_DEMO/src/simulation.cpp
+CMakeFiles/main.dir/src/simulation.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/VRG_DEMO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/simulation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/simulation.cpp.o -MF CMakeFiles/main.dir/src/simulation.cpp.o.d -o CMakeFiles/main.dir/src/simulation.cpp.o -c /home/petr/Projects/VRG_DEMO/src/simulation.cpp
+
+CMakeFiles/main.dir/src/simulation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/main.dir/src/simulation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/petr/Projects/VRG_DEMO/src/simulation.cpp > CMakeFiles/main.dir/src/simulation.cpp.i
+
+CMakeFiles/main.dir/src/simulation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/simulation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/petr/Projects/VRG_DEMO/src/simulation.cpp -o CMakeFiles/main.dir/src/simulation.cpp.s
+
 CMakeFiles/main.dir/src/transform.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/transform.cpp.o: /home/petr/Projects/VRG_DEMO/src/transform.cpp
 CMakeFiles/main.dir/src/transform.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/VRG_DEMO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/transform.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/VRG_DEMO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/transform.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/transform.cpp.o -MF CMakeFiles/main.dir/src/transform.cpp.o.d -o CMakeFiles/main.dir/src/transform.cpp.o -c /home/petr/Projects/VRG_DEMO/src/transform.cpp
 
 CMakeFiles/main.dir/src/transform.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/main.dir/src/transform.cpp.s: cmake_force
 CMakeFiles/main.dir/src/vector3.cpp.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/vector3.cpp.o: /home/petr/Projects/VRG_DEMO/src/vector3.cpp
 CMakeFiles/main.dir/src/vector3.cpp.o: CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/VRG_DEMO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/vector3.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/petr/Projects/VRG_DEMO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/vector3.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/main.dir/src/vector3.cpp.o -MF CMakeFiles/main.dir/src/vector3.cpp.o.d -o CMakeFiles/main.dir/src/vector3.cpp.o -c /home/petr/Projects/VRG_DEMO/src/vector3.cpp
 
 CMakeFiles/main.dir/src/vector3.cpp.i: cmake_force
@@ -129,6 +143,7 @@ CMakeFiles/main.dir/src/vector3.cpp.s: cmake_force
 main_OBJECTS = \
 "CMakeFiles/main.dir/src/balistics.cpp.o" \
 "CMakeFiles/main.dir/src/main.cpp.o" \
+"CMakeFiles/main.dir/src/simulation.cpp.o" \
 "CMakeFiles/main.dir/src/transform.cpp.o" \
 "CMakeFiles/main.dir/src/vector3.cpp.o"
 
@@ -137,11 +152,12 @@ main_EXTERNAL_OBJECTS =
 
 main: CMakeFiles/main.dir/src/balistics.cpp.o
 main: CMakeFiles/main.dir/src/main.cpp.o
+main: CMakeFiles/main.dir/src/simulation.cpp.o
 main: CMakeFiles/main.dir/src/transform.cpp.o
 main: CMakeFiles/main.dir/src/vector3.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/petr/Projects/VRG_DEMO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/petr/Projects/VRG_DEMO/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable main"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -4,33 +4,19 @@
 #include "sim_settings.hpp"
 
 /**
- * Updates all entities with transform inside provided registry and checks if any entities colided
- * Compensates for simulation error
- * @param registry reference to entt registry
- * @param interation count of iteration steps, used to compensate simulation error
- */
-void UpdateScene(entt::registry &registry, int iteration);
-
-/**
  * Prints help
  */
 void ShowHelp();
 
 /**
- * Parses user input
+ * Parses user input and return filled sim_settings struct
  */
 sim_settings ParseUserInput(int argc, char *argv[]);
 
 /**
- * Creates bullet and target objects in registry
+ * creates, fills and return sim_data struct
  */
-void SceneSetup(entt::registry &registry);
-
-
-/**
- * Runs simulation and prints its result
- */
-void RunSimulation(entt::registry &registry);
+sim_data GetSimData(sim_settings settings);
 
 int main(int argc, char *argv[]);
 

@@ -24,12 +24,13 @@ void Transform::Update(float time_step, float gravity)
     if (this->isStatic)
         return;
     this->position += this->velocity * time_step;
+    this->distance_traveled += this->velocity.GetMagnitude() * time_step;
     this->velocity += Vector3(0, -gravity, 0) * time_step;
 }
 
 std::string Transform::ToString()
 {
-    return std::format("object {} at {} has velocity {}", name, position.ToString(), velocity.ToString());
+    return std::format("{} - position: {} | velocity: {}", name, position.ToString(), velocity.ToString());
 }
 
 std::string Transform::GetName()
@@ -49,4 +50,14 @@ bool Transform::InHitRange(Vector3 target_position, float allowed_diviation)
 Vector3 Transform::GetPosition()
 {
     return this->position;
+}
+
+Vector3 Transform::GetVelocity()
+{
+    return this->velocity;
+}
+
+float Transform::GetTravelDistance()
+{
+    return this->distance_traveled;
 }

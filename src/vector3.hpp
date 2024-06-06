@@ -2,9 +2,9 @@
 #define _VECTOR3_H
 #include <string>
 
-
 /**
  * Class representing 3D vector with axis x, y, z ( NOTE: y is upwards )
+ * Provides useful operations between vectors
  */
 class Vector3
 {
@@ -30,6 +30,9 @@ public:
      * return vector magnitude
      */
     float GetMagnitude(); 
+
+    // returns false if any axis has NaN
+    bool IsValid();
 
     bool operator != (const Vector3 &other);
     bool operator == (const Vector3 &other);

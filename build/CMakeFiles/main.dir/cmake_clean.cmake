@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/balistics.cpp.o.d"
   "CMakeFiles/main.dir/src/main.cpp.o"
   "CMakeFiles/main.dir/src/main.cpp.o.d"
+  "CMakeFiles/main.dir/src/simulation.cpp.o"
+  "CMakeFiles/main.dir/src/simulation.cpp.o.d"
   "CMakeFiles/main.dir/src/transform.cpp.o"
   "CMakeFiles/main.dir/src/transform.cpp.o.d"
   "CMakeFiles/main.dir/src/vector3.cpp.o"
