@@ -12,6 +12,7 @@ This project was made as part of job interview for VR Group, a.s.
 
 
 # Build
+All dependencies are resolved resolved during first build
 ```
 $ mkdir build
 $ cd build
@@ -27,5 +28,9 @@ $ make
 ```
 
 # Dependencies
-- [EnTT](https://github.com/skypjack/entt) - A fast and reliable entity component system (ECS)
-- [Catch2](https://github.com/catchorg/Catch2) - A modern, C++-native, test framework for unit-tests
+- [EnTT](https://github.com/skypjack/entt) 
+    - A fast and reliable entity component system (ECS)
+    - Automaticaly fetched during first build
+- [Catch2](https://github.com/catchorg/Catch2) 
+    - A modern, C++-native, test framework for unit-tests
+    - Automaticaly fetched during first build of `tests.cpp`

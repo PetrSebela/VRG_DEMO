@@ -2,7 +2,7 @@
 
 # ignoring build and deps folder
 build/
-libs/
+libs/*
 
 # test ignores
 tests/*
