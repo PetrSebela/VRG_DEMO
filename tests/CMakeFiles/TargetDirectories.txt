@@ -1,3 +1,0 @@
-/home/petr/Projects/VRG_DEMO/tests/CMakeFiles/tests.dir
-/home/petr/Projects/VRG_DEMO/tests/CMakeFiles/edit_cache.dir
-/home/petr/Projects/VRG_DEMO/tests/CMakeFiles/rebuild_cache.dir
