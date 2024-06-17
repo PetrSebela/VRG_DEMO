@@ -7,6 +7,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_subdirectory(libs/entt)
 
 file(GLOB deps src/*.cpp)
-add_executable(main ${deps})
+add_executable(sim ${deps})
 
-target_link_libraries(main PRIVATE EnTT::EnTT)
+target_link_libraries(sim PRIVATE EnTT::EnTT)

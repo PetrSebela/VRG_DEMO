@@ -11,8 +11,8 @@
 void ShowHelp()
 {
     printf("Usage:\n");
-    printf("\t./main --help \t\t prints help\n");
-    printf("\t./main sx sy sz tx ty yz velocity time_step\n");
+    printf("\t./sim --help \t\t prints help\n");
+    printf("\t./sim sx sy sz tx ty yz velocity time_step\n");
     printf("s[xyz] - shooter position\n");
     printf("t[xyz] - target position\n");
     printf("velocity - initial projectile velocity (0 - 10,000,00) mps\n");

@@ -1,0 +1,10 @@
+.vscode/
+
+# ignoring build and deps folder
+build/
+libs/
+
+# test ignores
+tests/*
+!tests/CMakeLists.txt
+!tests/tests.cpp
